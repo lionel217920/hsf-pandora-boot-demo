@@ -5,7 +5,7 @@ import com.alibaba.edas.api.HelloWorldService;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class HSFConfig {ls
+public class HSFConfig {
 
     @HSFConsumer(clientTimeout = 3000, serviceVersion = "1.0.0")
     private HelloWorldService helloWorldService;
