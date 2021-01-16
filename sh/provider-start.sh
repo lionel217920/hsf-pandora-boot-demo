@@ -1,0 +1,1 @@
+java -Djmenv.tbsite.net=172.16.203.140 -Dpandora.location=taobao-hsf.sar-2019-06-stable.jar -Dhsf.server.ip=172.16.203.202 -jar hsf-pandora-boot-provider-1.0-SNAPSHOT.jar

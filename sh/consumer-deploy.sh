@@ -1,0 +1,1 @@
+scp ../hsf-pandora-boot-consumer/target/hsf-pandora-boot-consumer-1.0-SNAPSHOT.jar lionel@172.16.203.201:/usr/local/websrv
