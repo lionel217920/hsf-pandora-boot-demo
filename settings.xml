@@ -5,24 +5,12 @@
     <mirrors>
         <mirror>
             <id>mirror</id>
-            <mirrorOf>!rdc-releases,!rdc-snapshots</mirrorOf>
+            <mirrorOf>!central,!snapshots</mirrorOf>
             <name>mirror</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </mirror>
 
     </mirrors>
-    <servers>
-        <server>
-            <id>rdc-releases</id>
-            <username>AWbECU</username>
-            <password>YH5L4oaUJh</password>
-        </server>
-        <server>
-            <id>rdc-snapshots</id>
-            <username>AWbECU</username>
-            <password>YH5L4oaUJh</password>
-        </server>
-    </servers>
     <profiles>
         <profile>
             <id>nexus</id>
@@ -47,26 +35,6 @@
                         <enabled>true</enabled>
                     </snapshots>
                 </repository>
-                <repository>
-                    <id>rdc-releases</id>
-                    <url>https://repo.rdc.aliyun.com/repository/26525-release-AbqCyX/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-                <repository>
-                    <id>rdc-snapshots</id>
-                    <url>https://repo.rdc.aliyun.com/repository/26525-snapshot-BqRerW/</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
@@ -82,26 +50,6 @@
                 <pluginRepository>
                     <id>snapshots</id>
                     <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </pluginRepository>
-                <pluginRepository>
-                    <id>rdc-releases</id>
-                    <url>https://repo.rdc.aliyun.com/repository/26525-release-AbqCyX/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </pluginRepository>
-                <pluginRepository>
-                    <id>rdc-snapshots</id>
-                    <url>https://repo.rdc.aliyun.com/repository/26525-snapshot-BqRerW/</url>
                     <releases>
                         <enabled>false</enabled>
                     </releases>
