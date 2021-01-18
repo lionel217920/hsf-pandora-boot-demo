@@ -6,13 +6,18 @@
 
 ### 轻量级配置中心
 
-172.16.203.140
+部署在虚拟机**172.16.203.140**这台机器上
+
+关闭防火墙
+```shell
+systemctl stop firewalld.service
+```
 
 ### HSF服务提供方（provider）
 
-配置host
+1. 配置host
 
-**172.16.203.202**
+部署在虚拟机**172.16.203.202**这台机器上
 
 ```shell
 vim /etc/hosts
@@ -22,13 +27,21 @@ vim /etc/hosts
 
 ```shell
 172.16.203.140   jmenv.tbsite.net
+```
+
+2. 开放端口
+
+```shell
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
+firewall-cmd --zone=public --add-port=12200/tcp --permanent
+
 ```
 
 ### HSF服务调用方（consumer）
 
-**172.16.203.201**
+部署在虚拟机**172.16.203.201**这台机器上
 
-配置host
+1. 配置host
 
 ```shell
 vim /etc/hosts
@@ -38,4 +51,10 @@ vim /etc/hosts
 
 ```shell
 172.16.203.140   jmenv.tbsite.net
+```
+
+2. 开放端口
+
+```shell
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
 ```
